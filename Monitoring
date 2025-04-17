@@ -1,0 +1,7 @@
+-- Load average:
+	
+  >> load avg. per day:
+		# grep -B1 LOAD * | grep '-' | grep -v 'LOAD AVERAGE' | grep -v '^--$' | awk -F'- ' '{print $1, $2}'
+	
+	>> Specific hour:
+		# grep -B1 LOAD 07h-* | grep '-' | grep -v 'LOAD AVERAGE' | grep -v '^--$' | awk -F'- ' '{print $1, $2}' 
