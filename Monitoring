@@ -5,3 +5,6 @@
 	
 	>> Specific hour:
 		# grep -B1 LOAD 07h-* | grep '-' | grep -v 'LOAD AVERAGE' | grep -v '^--$' | awk -F'- ' '{print $1, $2}' 
+
+# Volume/disk based recommendations:
+> XFS is recommended than ext4
